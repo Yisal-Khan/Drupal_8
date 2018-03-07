@@ -1,0 +1,7 @@
+<?php
+
+function Hello_Theme_preprocess_node(&$variables)
+{
+	$variables['simple_text'] = array('#markup' => 'A simple string' ,
+		);
+}
