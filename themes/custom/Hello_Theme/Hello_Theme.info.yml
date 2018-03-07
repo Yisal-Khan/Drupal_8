@@ -1,0 +1,17 @@
+name: Hello Theme
+type: theme
+base theme: classy
+description: A great Theme to practice themeing
+package: custom
+core: 8.x
+
+#Regions
+regions:
+   header: 'Header'
+   menubar: 'Menu Bar'
+   body: 'Body'
+   banner_top: 'Banner Top'
+   content: 'Content'
+   footer: 'Footer'
+   page_top: 'Page Top'
+   page_bottom: 'Page Bottom'
