@@ -1,0 +1,15 @@
+name: Used Cars
+type: theme
+description: 'Awesome Theme for Used Cars Website'
+package: custom
+core: 8.x
+libraries:
+  - used_cars/global-styling
+ 
+base theme: stable
+
+regions:
+  footer_6th: 'Footer 6th'
+  content: 'Content'
+  header: 'Header'
+  menubar: 'Menu Bar'
