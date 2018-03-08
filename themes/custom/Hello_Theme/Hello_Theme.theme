@@ -4,4 +4,19 @@ function Hello_Theme_preprocess_node(&$variables)
 {
 	$variables['simple_text'] = array('#markup' => 'A simple string' ,
 		);
+
+	if($variables['logged_in']==TRUE && $variables['node']->getOwnerId() == $variables['user']->id())
+	{
+		$variables['content'] = array('#plain_text' => 'This is content preprocess function editing' , );
+	}
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function Hello_Theme_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+  if ($logged_in) {
+    $suggestions[] = 'node__' . 'authenticated';
+  }
 }
