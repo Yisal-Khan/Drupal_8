@@ -1,0 +1,6 @@
+name: 'Hello World Feature'
+type: module
+core: 8.x
+dependencies:
+  - contact
+version: 8.x-1.0

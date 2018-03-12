@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - yisal.khan@square63.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
