@@ -1,0 +1,7 @@
+/**
+ * Place your custom styles here.
+ */
+.page-node-type-article .field--name-body img,
+.page-node-type-page .field--name-body img {
+	max-width: 100%;
+}
