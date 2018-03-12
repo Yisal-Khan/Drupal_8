@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains nokia_testing.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function nokia_testing_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the nokia_testing module.
+    case 'help.page.nokia_testing':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Specially designed for the testing of Dynamic Permissions') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function nokia_testing_theme() {
+  return [
+    'nokia_testing' => [
+      'render element' => 'children',
+    ],
+  ];
+}

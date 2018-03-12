@@ -1,0 +1,7 @@
+name: 'Nokia Testing'
+type: module
+description: 'Specially designed for the testing of Dynamic Permissions'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - hello_world
